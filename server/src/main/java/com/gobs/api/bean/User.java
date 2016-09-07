@@ -17,15 +17,14 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="USERS")
-/*@NamedQueries({
-				@NamedQuery(name="Users.getAllUsers",query="Select u from Users u"),
-				@NamedQuery(name="Users.getUserByEmail", query="select u from Users u where u.email=:email")
-			 })*/
+@NamedQueries({
+				@NamedQuery(name="Users.getAllUsers",query="Select u from User u"),
+				@NamedQuery(name="Users.getUserByEmail", query="select u from User u where u.email=:email")
+			 })
 @NamedNativeQuery(name="Users.finaAll",query="select * from users",resultClass=User.class)
 public class User {
 
 	@Id
-	//@GeneratedValue(strategy=GenerationType.SEQUENCE,generator="seq_user_id")
 	private String id;
 	@Column(nullable=false)
 	private String firstName;
@@ -53,7 +52,7 @@ public class User {
 	}
 
 	public void setId(String id) {
-		this.id = id;
+		this.id = id.trim();
 	}
 
 	public String getFirstName() {
@@ -61,7 +60,7 @@ public class User {
 	}
 
 	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+		this.firstName = firstName.trim();
 	}
 
 	public String getLastName() {
@@ -69,7 +68,7 @@ public class User {
 	}
 
 	public void setLastName(String lastName) {
-		this.lastName = lastName;
+		this.lastName = lastName.trim();
 	}
 
 	public Address getAddress() {
@@ -85,7 +84,7 @@ public class User {
 	}
 
 	public void setEmail(String email) {
-		this.email = email;
+		this.email = email.trim();
 	}
 
 	public String getPhoneNo() {
@@ -93,7 +92,7 @@ public class User {
 	}
 
 	public void setPhoneNo(String phoneNo) {
-		this.phoneNo = phoneNo;
+		this.phoneNo = phoneNo.trim();
 	}
 
 	public boolean isAdmin() {

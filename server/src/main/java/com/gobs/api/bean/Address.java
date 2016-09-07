@@ -7,14 +7,23 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table
+@NamedQueries({
+	@NamedQuery(name="Address.checkAddressExist",query="Select a from Address a "
+			+ "where lower(a.address1)=lower(:address1) "
+			+ "AND lower(a.address2)=lower(:address2) "
+			+ "AND lower(a.city)=lower(:city) "
+			+ "AND lower(a.state)=lower(:state) "
+			+ "AND lower(a.country)=lower(:country)")
+})
 public class Address {
 
 	@Id
-	//@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="seq_address_id")
 	private String id;
 	@Column(nullable=false)
 	private String address1;
@@ -36,7 +45,7 @@ public class Address {
 	}
 
 	public void setId(String id) {
-		this.id = id;
+		this.id = id.trim();
 	}
 
 	public String getAddress1() {
@@ -44,7 +53,7 @@ public class Address {
 	}
 
 	public void setAddress1(String address1) {
-		this.address1 = address1;
+		this.address1 = address1.trim();
 	}
 
 	public String getAddress2() {
@@ -52,7 +61,7 @@ public class Address {
 	}
 
 	public void setAddress2(String address2) {
-		this.address2 = address2;
+		this.address2 = address2.trim();
 	}
 
 	public String getCity() {
@@ -60,7 +69,7 @@ public class Address {
 	}
 
 	public void setCity(String city) {
-		this.city = city;
+		this.city = city.trim();
 	}
 
 	public String getState() {
@@ -68,7 +77,7 @@ public class Address {
 	}
 
 	public void setState(String state) {
-		this.state = state;
+		this.state = state.trim();
 	}
 
 	public String getCountry() {
@@ -76,7 +85,7 @@ public class Address {
 	}
 
 	public void setCountry(String country) {
-		this.country = country;
+		this.country = country.trim();
 	}
 
 	@Override

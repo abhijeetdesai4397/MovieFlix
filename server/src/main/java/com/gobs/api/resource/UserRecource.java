@@ -33,7 +33,6 @@ public class UserRecource {
 	public User getUser(@PathVariable("userid") String userid)
 	{
 		User user=service.getUser(userid);
-		System.out.println(user.toString());
 		return user;
 	}
 

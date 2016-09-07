@@ -25,8 +25,17 @@ public class UserRepository {
 	
 	public User getUser(String userid)
 	{
-		System.out.println(userid);
 		return entityManager.find(User.class, userid);
+	}
+	
+	public User getUserByEmail(String email)
+	{
+		TypedQuery<User> query=entityManager.createNamedQuery("Users.getUserByEmail", User.class);
+		query.setParameter("email", email);
+		List<User> userList=query.getResultList();
+		if(userList.size()==1)
+			return userList.get(0);
+		return null;
 	}
 	
 	public User creatUser(User user)
