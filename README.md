@@ -1,6 +1,5 @@
-# movieflix-seed
-seed for the Full-Stack training project: movieflix
-
+# movieflix
+Study project including Spring REST, JAP, HTML, CSS and Angular JS
 ## directory structure:
 
 **`client`** [*module-complete*]: contains ui app (HTML, CSS, JS, fonts, images)   
