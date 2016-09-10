@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
 import org.springframework.stereotype.Repository;
@@ -18,8 +17,7 @@ public class UserRepository {
 	private EntityManager entityManager;
 	public List<User> getAllUsers()
 	{
-		//TypedQuery<User> query= entityManager.createNamedQuery("User.getAllUsers", User.class);
-		Query query=entityManager.createNamedQuery("Users.finaAll");
+		TypedQuery<User> query= entityManager.createNamedQuery("User.getAllUsers", User.class);
 		return query.getResultList();
 	}
 	

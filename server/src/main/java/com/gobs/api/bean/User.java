@@ -5,12 +5,9 @@ import java.util.UUID;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
-import javax.persistence.NamedNativeQuery;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
@@ -21,7 +18,6 @@ import javax.persistence.Table;
 				@NamedQuery(name="Users.getAllUsers",query="Select u from User u"),
 				@NamedQuery(name="Users.getUserByEmail", query="select u from User u where u.email=:email")
 			 })
-@NamedNativeQuery(name="Users.finaAll",query="select * from users",resultClass=User.class)
 public class User {
 
 	@Id
