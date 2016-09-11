@@ -45,7 +45,6 @@ public class JPAConfig {
 	private Properties getProperties()
 	{
 		Properties props=new Properties();
-		System.out.println("Read properties");
 		props.setProperty(PersistenceUnitProperties.DDL_GENERATION, PersistenceUnitProperties.CREATE_ONLY);
 		props.setProperty(PersistenceUnitProperties.LOGGING_LEVEL, SessionLog.FINE_LABEL);
 		props.setProperty(PersistenceUnitProperties.WEAVING,"false");
