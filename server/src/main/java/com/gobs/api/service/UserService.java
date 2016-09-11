@@ -52,9 +52,9 @@ public class UserService {
 	}
 	
 	@Transactional
-	public User updateUser(User user)
+	public User updateUser(String userId, User user)
 	{
-		User userExists=repository.getUser(user.getId());
+		User userExists=repository.getUser(userId);
 		if(userExists==null)
 			throw new UserNotFountException("User with given ID does not exist");
 		

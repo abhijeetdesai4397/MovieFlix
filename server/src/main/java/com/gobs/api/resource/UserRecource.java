@@ -45,8 +45,8 @@ public class UserRecource {
 	
 	// update user
 	@RequestMapping(method=RequestMethod.PUT, value="/{userid}", consumes=MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public User updateUser(@RequestBody User user)
+	public User updateUser(@PathVariable("userid") String userid,@RequestBody User user)
 	{
-		return service.updateUser(user);
+		return service.updateUser(userid,user);
 	}
 }
