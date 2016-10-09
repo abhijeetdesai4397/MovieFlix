@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>MovieFlix</title>
+  <!-- Bootstrap -->
+  <link data-require="font-awesome@4.5.0" data-semver="4.5.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/global.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand titleIcon" href="#" title="Movie Flix"><span class="fa fa-film"></span> Flix</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="#!">
+              <span class="fa fa-home"></span>
+            </a>
+          </li>
+          <li>
+            <a href="movies.html" title="Movies">
+              <span class="fa fa-film"></span>
+            </a>
+          </li>
+          <li>
+            <a href="tvserial.html" title="TV Serials">
+              <span class="fa fa-tv"></span>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0);" title="Login" data-toggle="modal" data-target="#myModal">
+              <span class="fa fa-user"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+  <section class="banner">
+    <div class="container">
+      <img src="images/bannerMovie.jpg" alt="">
+      <div class="bannerWrapper">
+        <h2> Latest Movie Name </h2>
+        <p>Small description with relative banner at background.</p>
+      </div>
+    </div>
+  </section>
+  <!-- /.container -->
+  <section class="tvSerialCarousel">
+    <div class="container">
+      <h1>Top Movies</h1>
+    </div>
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel slide" id="carousel-example-captions" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-captions" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-example-captions" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <img src="images/movie.jpg" alt="">
+                      <div class="imgWrapContent">
+                        <h3>Movie Name</h3>
+                        <p>Small Description</p>
+                        <ul class="list-unstyled">
+                          <li><a href="javascript:void(0);" target="_blank"><span class="fa fa-play-circle-o"></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <img src="images/movie.jpg" alt="">
+                      <div class="imgWrapContent">
+                        <h3>Movie Name</h3>
+                        <p>Small Description</p>
+                        <ul class="list-unstyled">
+                          <li><a href="javascript:void(0);" target="_blank"><span class="fa fa-play-circle-o"></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <img src="images/movie.jpg" alt="">
+                      <div class="imgWrapContent">
+                        <h3>Movie Name</h3>
+                        <p>Small Description</p>
+                        <ul class="list-unstyled">
+                          <li><a href="javascript:void(0);" target="_blank"><span class="fa fa-play-circle-o"></span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#carousel-example-captions" class="left carousel-control" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+        <a href="#carousel-example-captions" class="right carousel-control" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <section class="tvSerialCarousel">
+    <div class="container">
+      <h1>Top Tv Serials</h1>
+    </div>
+    <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel slide" id="carousel-example-captions1" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-captions1" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-captions1" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-example-captions1" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-caption">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="imgWrap">
+                      <!--<img src="" alt="">-->
+                      <div class="imgWrapContent">
+                        <h3>Second slide label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#carousel-example-captions1" class="left carousel-control" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span></a>
+        <a href="#carousel-example-captions1" class="right carousel-control" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span></a>
+      </div>
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+  <footer class="text-center">
+    &copy; Movie Flix
+  </footer>
+  <!--Login Model-->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <form method="post" class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Login Here</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+            <div class="input-group">
+              <div class="input-group-addon"><span class="fa fa-user"></span></div>
+              <input type="text" class="form-control" id="exampleInputAmount" placeholder="Username">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+            <div class="input-group">
+              <div class="input-group-addon"><span class="fa fa-lock"></span></div>
+              <input type="password" class="form-control" id="exampleInputAmount" placeholder="Password">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary"><span class="fa fa-unlock"></span> Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!--Registeration Model-->
+  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <form method="post" class="modal-content text-center">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Sign In Here</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+            <div class="input-group">
+              <div class="input-group-addon"><span class="fa fa-user"></span></div>
+              <input type="text" class="form-control" id="exampleInputAmount" placeholder="Username">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+            <div class="input-group">
+              <div class="input-group-addon"><span class="fa fa-lock"></span></div>
+              <input type="password" class="form-control" id="exampleInputAmount" placeholder="Password">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary"><span class="fa fa-unlock"></span> Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
